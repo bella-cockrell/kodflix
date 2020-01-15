@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  BroswerRouter as Router,
+  Swtich,
+  Route,
+  Link
+} from 'react-router-dom';
+
 //Images
 import starWars from './images/star-wars-skywalker.jpg';
 import jojoRabbit from './images/jojo-rabbit.jpg';
@@ -8,63 +15,29 @@ import goodbyeLenin from './images/goodbye-lenin.jpg';
 import littleMiss from './images/little-miss.jpg';
 //Style
 import './App.css';
-
-//Components
-function Movie(props) {
-  return (
-    <div>
-      <h3>{props.title}</h3>
-      <h3>Rating: {props.rating}</h3>
-    </div>
-  )
-}
+//Component
+import Movie from './Movie';
 
 //App
 function App() {
   return (
     <div className='App'>
-    <meta content='width=device-width, initial-scale=1' name='viewport' />
+      <meta content='width=device-width, initial-scale=1' name='viewport' />
       <body>
+        <h1> Kodflix </h1>
         <div className='container'>
-          <div className='item'>
-          <img src={starWars} alt="Star Wars: The Rise of the Skywalker" />
-            <div className='overlay'>
-              <Movie title='Star Wars: The Rise of the Skywalker' 
-              rating='4' />
-            </div>              
-          </div>
-          <div className='item'>
-          <img src={jojoRabbit} alt="Jojo Rabbit" />
-            <Movie title='Jojo Rabbit' 
-            rating='9' />
-          </div>
-          <div className='item'>
-          <img src={theWitcher} alt="The Witcher" />
-            <Movie title='The Witcher' 
-            rating='6' />
-          </div>
+          <Movie image={starWars} title='Star Wars: The Rise of the Skywalker' rating='4' />
+          <Movie image={jojoRabbit} title='Jojo Rabbit' rating='9' />
+          <Movie image={theWitcher} title='The Witcher' rating='6' />
         </div>
         <div className='container'>
-          <div className='item'>
-          <img src={dracula} alt="Dracula" />
-            <Movie title='Dracula' 
-            rating='3' />
-          </div>
-          <div className='item'>
-          <img src={goodbyeLenin} alt="Goodbye Lenin" />
-            <Movie title='Goodbye Lenin' 
-            rating='7' />
-          </div>
-          <div className='item'>
-          <img src={littleMiss} alt="Little Miss Sunshine" />
-            <Movie title='Little Miss Sunshine' 
-            rating='7' />
-          </div>
+          <Movie image={dracula} title='Dracula' rating='3' />
+          <Movie image={goodbyeLenin} title='Goodbye Lenin' rating='7' />
+          <Movie image={littleMiss} title='Little Miss Sunshine' rating='7' />
         </div>
-
       </body>
     </div>
-  );
-}
-
-export default App;
+      );
+    }
+    
+    export default App;

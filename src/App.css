@@ -3,10 +3,6 @@
   background-color: grey;
 }
 
-img {
-  width: 100%;
- }
-
 .container {
   display: flex;
 }
@@ -17,12 +13,17 @@ img {
   }
 }
 
+.container img {
+  width: 100%;
+}
+
 .item {
   flex: 1;
   padding: 30px;
   position: relative;
   border: 1px solid green;
-  overflow: hidden; /* Add the overflow property to the parent*/
+  overflow: hidden; 
+  /* Add the overflow property to the parent*/
 }
 
 .overlay {
