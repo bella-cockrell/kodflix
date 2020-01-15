@@ -1,16 +1,16 @@
 import React from 'react';
 //Images
-import starWars from './star-wars-skywalker.jpg';
-import jojoRabbit from './jojo-rabbit.jpg';
-import theWitcher from './the-witcher.jpg';
-import dracula from './dracula.jpg';
-import goodbyeLenin from './goodbye-lenin.jpg';
-import littleMiss from './little-miss.jpg';
+import starWars from './images/star-wars-skywalker.jpg';
+import jojoRabbit from './images/jojo-rabbit.jpg';
+import theWitcher from './images/the-witcher.jpg';
+import dracula from './images/dracula.jpg';
+import goodbyeLenin from './images/goodbye-lenin.jpg';
+import littleMiss from './images/little-miss.jpg';
 //Style
 import './App.css';
 
 //Components
-function Movie (props) {
+function Movie(props) {
   return (
     <div>
       <h3>{props.title}</h3>
@@ -23,37 +23,44 @@ function Movie (props) {
 function App() {
   return (
     <div className='App'>
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
       <body>
-//First row
-      <div className='container'>
-        <div className='item'>
-        <Movie title='Star Wars: The Rise of the Skywalker' rating='4'/>
-        <img src= {starWars} alt= "Star Wars: The Rise of the Skywalker" />
+        <div className='container'>
+          <div className='item'>
+          <img src={starWars} alt="Star Wars: The Rise of the Skywalker" />
+            <div className='overlay'>
+              <Movie title='Star Wars: The Rise of the Skywalker' 
+              rating='4' />
+            </div>              
+          </div>
+          <div className='item'>
+          <img src={jojoRabbit} alt="Jojo Rabbit" />
+            <Movie title='Jojo Rabbit' 
+            rating='9' />
+          </div>
+          <div className='item'>
+          <img src={theWitcher} alt="The Witcher" />
+            <Movie title='The Witcher' 
+            rating='6' />
+          </div>
         </div>
-        <div className='item'>
-        <Movie title='Jojo Rabbit' rating='9'/>
-        <img src= {jojoRabbit} alt= "Jojo Rabbit" />
+        <div className='container'>
+          <div className='item'>
+          <img src={dracula} alt="Dracula" />
+            <Movie title='Dracula' 
+            rating='3' />
+          </div>
+          <div className='item'>
+          <img src={goodbyeLenin} alt="Goodbye Lenin" />
+            <Movie title='Goodbye Lenin' 
+            rating='7' />
+          </div>
+          <div className='item'>
+          <img src={littleMiss} alt="Little Miss Sunshine" />
+            <Movie title='Little Miss Sunshine' 
+            rating='7' />
+          </div>
         </div>
-        <div className='item'>
-        <Movie title='The Witcher' rating='6'/>
-        <img src= {theWitcher} alt= "The Witcher" />
-        </div>
-      </div>
-//Second row
-      <div className='container'>
-        <div className='item'>
-        <Movie title='Dracula' rating='3'/>
-        <img src= {dracula} alt= "Dracula" />
-        </div>
-        <div className='item'>
-        <Movie title='Goodbye Lenin' rating='7'/>
-        <img src= {goodbyeLenin} alt= "Goodbye Lenin" />
-        </div>
-        <div className='item'>
-        <Movie title='Little Miss Sunshine' rating='7'/>
-        <img src= {littleMiss} alt= "Little Miss Sunshine" />
-        </div>
-      </div>
 
       </body>
     </div>

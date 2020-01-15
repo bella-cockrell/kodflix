@@ -1,21 +1,43 @@
 .App {
   text-align: center;
-  background-color: black;
+  background-color: grey;
 }
 
-.container{
-  display: flex;
-}
-.item {
-  flex: 1;
-
-}
 img {
   width: 100%;
-  height: auto;
+ }
+
+.container {
+  display: flex;
 }
 
-h3 {
-  color: palegoldenrod;
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
+.item {
+  flex: 1;
+  padding: 30px;
+  position: relative;
+  border: 1px solid green;
+  overflow: hidden; /* Add the overflow property to the parent*/
+}
+
+.overlay {
+  position: absolute;
+  bottom: -130px;
+  left: 0px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: pink;
+  opacity: .6;
+  transition: bottom 0.5s ease;
+}
+
+.item:hover .overlay {
+  display: block;
+  bottom: 0px;
+  /* Why is animation different if added here?*/
+}
