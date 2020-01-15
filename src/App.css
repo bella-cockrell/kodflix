@@ -1,36 +1,21 @@
 .App {
   text-align: center;
-  background-color: grey;
+  background-color: black;
 }
 
-@media only screen and (min-width: 400px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+.container{
+  display: flex;
 }
-
 .item {
-  height: 400px;
-  width: 200px;
+  flex: 1;
 
 }
-
 img {
   width: 100%;
   height: auto;
 }
 
 h3 {
-  color: yellow;
+  color: palegoldenrod;
 }
 
-h3:hover{
-  color: green;
-}
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
-}

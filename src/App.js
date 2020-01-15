@@ -24,7 +24,7 @@ function App() {
   return (
     <div className='App'>
       <body>
-
+//First row
       <div className='container'>
         <div className='item'>
         <Movie title='Star Wars: The Rise of the Skywalker' rating='4'/>
@@ -38,6 +38,9 @@ function App() {
         <Movie title='The Witcher' rating='6'/>
         <img src= {theWitcher} alt= "The Witcher" />
         </div>
+      </div>
+//Second row
+      <div className='container'>
         <div className='item'>
         <Movie title='Dracula' rating='3'/>
         <img src= {dracula} alt= "Dracula" />
