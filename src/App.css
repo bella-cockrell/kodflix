@@ -17,8 +17,10 @@
   width: 100%;
 }
 
-.item {
+.item { /*fix me -- images are not 100%*/
   flex: 1;
+  height: 200px;
+  width: 150px;
   padding: 30px;
   position: relative;
   border: 1px solid green;
