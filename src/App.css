@@ -1,6 +1,13 @@
 .App {
   text-align: center;
-  background-color: grey;
+  color:white;
+  background-color: black;
+}
+
+
+img {
+  width: 100%; /* There is something wrong here */
+  height: auto;
 }
 
 .container {
@@ -13,34 +20,29 @@
   }
 }
 
-.container img {
-  width: 100%;
-}
-
-.item { /*fix me -- images are not 100%*/
+.item {
   flex: 1;
-  height: 200px;
-  width: 150px;
-  padding: 30px;
+  max-width: 600px; /*added this to fix the problem of some images being larger, but different heights */
+  padding: 10px;
   position: relative;
-  border: 1px solid green;
+  border: 1px solid red;
   overflow: hidden; 
   /* Add the overflow property to the parent*/
 }
 
 .overlay {
   position: absolute;
-  bottom: -130px;
+  bottom: -150px;
   left: 0px;
   width: 100%;
   border-radius: 10px;
-  background-color: pink;
-  opacity: .6;
+  background-color: red;
+  opacity: .8;
   transition: bottom 0.5s ease;
 }
 
 .item:hover .overlay {
   display: block;
-  bottom: 0px;
+  bottom: -8px;
   /* Why is animation different if added here?*/
 }

@@ -15,10 +15,8 @@ function App() {
   return (
     <div className='App'>
       <meta content='width=device-width, initial-scale=1' name='viewport' />
-      <body>
         <h1> Kodflix </h1>
         <Gallery />
-      </body>
     </div>
   );
 }
