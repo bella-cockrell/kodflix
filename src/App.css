@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Source+Sans+Pro&display=swap');
+
 .App {
   text-align: center;
   color:white;
   background-color: black;
 }
 
+h1 {
+  font-size: 50px;
+  font-family: 'Bangers', cursive; 
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+h3 {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: -5px;
+}
+
+p {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
   grid-row-gap: 0px;
 }
 
@@ -16,8 +35,8 @@ img {
 }
 
 .item {
-  border: 1px solid red;
-  max-height: 305px;
+  margin: 5px;
+  /* max-height: auto; */
 
   overflow: hidden; 
   position: relative;
@@ -30,7 +49,7 @@ img {
   left: 0px;
   width: 100%;
   border-radius: 10px;
-  background-color: red;
+  background-color: white;
   opacity: .8;
   transition: bottom 0.5s ease;
 }

@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-  BroswerRouter as Router,
-  Swtich,
-  Route,
-  Link
-} from 'react-router-dom';
+//Routing
+import './Details.js'
 //Style
 import './App.css';
 //Component
