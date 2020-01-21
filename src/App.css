@@ -21,6 +21,9 @@ p {
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
 }
+.pPage{
+  color:white;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
