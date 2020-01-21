@@ -7,6 +7,8 @@ import {
   Link,
   BrowserRouter
 } from 'react-router-dom';
+import Films from './Films';
+import ContactUs from './Contactus';
 //Style
 import './App.css';
 //Component
@@ -26,24 +28,5 @@ function App() {
   );
 }
 
-function Films() {
-  return (
-  <div>
-    <div>Welcome to Films</div>
-    <Link to='/'>Home</Link>
-    <Link to='/films'>Films</Link>
-    <Link to='/contactus'>Contact Us</Link>
-  </div>
-  );
-}
-function ContactUs() {
-  return (
-  <div>
-    <div>Contact Us</div>
-    <Link to='/'>Home</Link>
-    <Link to='/films'>Films</Link>
-    <Link to='/contactus'>Contact Us</Link>
-  </div>
-  );
-}
+
 export default App;
