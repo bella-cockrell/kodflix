@@ -17,3 +17,4 @@ export default function getGallery() {
   }
 
   //Because this is a basic JS file, we do not need to import React, nor add in {} around the images.
+  //This is a proper front-end data source.

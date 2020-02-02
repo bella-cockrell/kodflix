@@ -5,8 +5,8 @@ import getGallery from './getGallery';
 export default function Gallery() {
   return (
     <div>
-      <div className='container'>
-        {getGallery().map(card => (
+      <div className='container'> {
+        getGallery().map(card => (
           <Card
             key = {card.id}
             id = {card.id}
@@ -19,3 +19,5 @@ export default function Gallery() {
     </div>
   );
 }
+//Please note: each returned child in an array.map must have a unique key prop, otherwise
+//it will throw up an ugly error in devtools. This ensures that all our elements are uniquely identified.
