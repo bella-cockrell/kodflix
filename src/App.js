@@ -20,13 +20,12 @@ function App() {
     <Router>
         <div className='App'>
           <h1>Kodflix</h1>
-          <Route path='/' exact component={Gallery} />
-          <Route path='/films' exact component={Films} />
-          <Route path='/contactus' exact component={ContactUs} />
+          <Route exact path='/' component={Gallery} />
+          <Route exact path='/:films' component={Films} />
+          <Route exact path='/contactus' component={ContactUs} />
         </div>
     </Router>
   );
 }
-
 
 export default App;
