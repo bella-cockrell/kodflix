@@ -1,12 +1,6 @@
 import React from 'react';
 //Routing
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  BrowserRouter
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Films from './Films';
 import ContactUs from './Contactus';
 //Style
@@ -21,7 +15,7 @@ function App() {
         <div className='App'>
           <h1>Kodflix</h1>
           <Route exact path='/' component={Gallery} />
-          <Route exact path='/:films' component={Films} />
+          <Route path='/:films' component={Films} />
           <Route exact path='/contactus' component={ContactUs} />
         </div>
     </Router>
