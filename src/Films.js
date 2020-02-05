@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import getGallery from './getGallery';
+import Card from './Card';
 
-export default class MessageTimed extends React.Component {
+
+export default class Films extends React.Component {
     constructor() {
         super();
 
@@ -21,6 +24,14 @@ export default class MessageTimed extends React.Component {
     render() {
         return (
             <div>
+                {/* <p className='pPage'> {
+                getGallery().map(film => (
+                    <Card 
+                        key = {film.id}
+                        title = {film.title} />
+                ))
+                }
+                </p> */}
                 <p className='pPage'>
                     {this.state.message}
                 </p>
