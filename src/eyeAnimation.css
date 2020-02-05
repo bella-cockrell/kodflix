@@ -1,0 +1,43 @@
+body { background: #121725; }
+#icon-eye {
+  width: 40px;
+  margin: auto;
+  padding: 20px;
+  resize: horizontal;
+  overflow: auto;
+  color: white;
+}
+.eye-open:hover { content: "Close"; }
+.eye-close:hover { content: "Open"; }
+#eye {
+    --duration-blink: .2s;
+    --duration-lashes: .2s;
+    --delay-lashes: var(--duration-blink);
+    --duration-pupil: .1s;
+    --delay-pupil: calc(var(--duration-blink)*2/3);
+  }
+  #eye-bottom, #eye-top { stroke-linecap: round; }
+  #eye-top, #eye-lashes { transition: var(--duration-blink) ease-in; }
+  #eye-pupil {
+    opacity: 0;
+    transition: opacity var(--duration-pupil) var(--delay-pupil) ease;
+  }
+
+  .eye-open #eye-top,
+  .eye-open #eye-lashes {
+    transform: rotateX(.5turn);
+    animation: scaleUp var(--duration-lashes) var(--delay-lashes) ease-in-out;
+  }
+  .eye-open #eye-pupil { opacity: 1; }
+
+  .eye-close #eye-lashes { animation: scaleDown var(--duration-lashes) var(--duration-blink) ease-in-out; }
+  .eye-close #eye-pupil { opacity: 0; }
+
+  @keyframes scaleUp {
+    50% { transform: rotateX(.5turn) scaleY(1.15); }
+    to { transform: rotateX(.5turn) scaleY(1); }
+  }
+  @keyframes scaleDown {
+    50% { transform: scaleY(1.15); }
+    to { transform: scaleY(1); }
+  }
