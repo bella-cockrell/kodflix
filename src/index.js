@@ -14,3 +14,5 @@ serviceWorker.unregister();
 if(module.hot) {
     module.hot.accept();
 }
+//This module.hot makes the reload quicker. Only refreshes what's been changed,
+//not the whole page.

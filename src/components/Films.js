@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default class MessageTimed extends React.Component {
+
+export default class Films extends React.Component {
     constructor() {
         super();
-
-        this.state = { 
+        this.state = {
             message: 'Hello, this will be the details page for each movie & tv show :)'
         }
     }
-    
+
     componentDidMount(){
+        let films = this.props.match.params.filmId;
         setTimeout(() => {
             this.setState({
                 message : 'Coming soon :)'
