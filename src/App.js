@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
         <div className='App'>
-          <h1>Kodflix</h1>
+          <h1>Eyeflix</h1>
           <Route exact path='/' component={Gallery} />
           <Route path='/:filmId' component={Films} />
           <Route exact path='/contactus' component={ContactUs} />

@@ -14,7 +14,7 @@ export default function getGallery() {
       { id: 'avatar', image: avatar, title: 'Avatar', rating: '3' },
       { id: 'candyman', image: candyman, title: 'Candyman', rating: '6' },
       { id: 'crawlingeye', image: crawlingEye, title: 'The Crawling Eye', rating: '7' },
-      { id: 'dayofthejackal', image: dayJackal, title: 'The Day fo the Jackal', rating: '9' },
+      { id: 'dayofthejackal', image: dayJackal, title: 'The Day of the Jackal', rating: '9' },
       { id: 'dinosaur', image: dinosaur, title: 'Dinosaur', rating: '8' },
       { id: 'frankenstein', image: frankenstein, title: 'Frankenstein Unbound', rating: '6' },
       { id: 'godzilla', image: godzilla, title: 'Gozilla', rating: '7' },
