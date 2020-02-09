@@ -17,12 +17,12 @@ export default function getGallery() {
       { id: 'dayofthejackal', image: dayJackal, title: 'The Day of the Jackal', rating: '9' },
       { id: 'dinosaur', image: dinosaur, title: 'Dinosaur', rating: '8' },
       { id: 'frankenstein', image: frankenstein, title: 'Frankenstein Unbound', rating: '6' },
-      { id: 'godzilla', image: godzilla, title: 'Gozilla', rating: '7' },
+      { id: 'godzilla', image: godzilla, title: 'Godzilla', rating: '7' },
       { id: 'grudge2', image: grudge2, title: 'The Grudge 2', rating: '6' },
       { id: 'kino-glas', image: kinoGlas, title: 'Kino Glas', rating: '4' },
       { id: 'requiemforadream', image: requiem, title: 'Requiem for a Dream', rating: '10' },
     ]
   }
 
-  //Because this is a basic JS file, we do not need to import React, nor add in {} around the images.
-  //This is a proper front-end data source.
+  //Because this is a basic JS file, we do not need to import React, nor add in
+  //{} around the images. This is a proper front-end data source.
