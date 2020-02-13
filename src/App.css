@@ -6,9 +6,16 @@
 }
 h1 {
   font-size: 50px;
-  font-family: 'Bangers', cursive; 
+  font-family: 'Bangers', cursive;
   padding-top: 20px;
   text-decoration: underline;
+  margin: 0px;
+  padding: 20px;
+}
+h2 {
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 20px;
   margin: 0px;
   padding: 20px;
 }
@@ -19,7 +26,6 @@ h3 {
 }
 p {
   color: black;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 .pPage{
   color:white;
@@ -33,7 +39,7 @@ a {
 }
 .item {
   margin: 5px;
-  overflow: hidden; 
+  overflow: hidden;
   position: relative;
 }
 img {
