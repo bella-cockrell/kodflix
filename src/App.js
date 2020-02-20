@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Films from './Components/Pages/FilmPage';
-import ContactUs from './Components/Contactus';
-import NotFound from './Components/NotFound';
+import Films from './frontend/Components/Pages/FilmPage';
+import ContactUs from './frontend/Components/Contactus';
+import NotFound from './frontend/Components/NotFound';
 //Style
 import './App.css';
 //Component
-import Gallery from './Components/Gallery';
+import Gallery from './frontend/Components/Gallery';
 
 
 
