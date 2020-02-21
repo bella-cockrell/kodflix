@@ -31,20 +31,23 @@ export default class Films extends React.Component {
         } else {
             return (
                 <div className='container'>
-                    <img
-                    src={this.state.film.image}
-                    alt={this.state.film.title} />
                     <h1 className='title'>
                         {this.state.film.title}
                     </h1>
+                    <div className='links'>
+                        <Link to='/'>Home</Link>
+                        <Link to='/contactus'>Contact Us</Link>
+                    </div>
+                    <img className='poster'
+                        src={this.state.film.image}
+                        alt={this.state.film.title}
+                    />
                     <p className='synopsis'>
                         {this.state.film.synopsis}
                     </p>
-                    <div className='Youtube video'>
+                    <div className='youtube-video'>
                         <iframe title='Youtube video' src={'https://www.youtube.com/embed/' + this.state.film.trailer} />
                     </div>
-                    <Link to='/'>Home</Link>
-                    <Link to='/contactus'>Contact Us</Link>
                 </div>
             );
         }
