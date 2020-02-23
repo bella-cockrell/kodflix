@@ -15,7 +15,7 @@
     "three": "^0.113.2"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "serve -s build -l 80",
     "start-frontend": "react-scripts start",
     "start-backend": "node ./src/backend/app.js",
     "build": "react-scripts build",
