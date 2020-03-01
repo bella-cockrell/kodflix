@@ -19,7 +19,7 @@
   "scripts": {
     "start-frontend": "react-scripts start",
     "start-all": "npm-run-all -p start-frontend start-backend",
-    "start-backend": "node ./src/backend/app.js",
+    "start-backend": "nodemon ./src/backend/app.js",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
