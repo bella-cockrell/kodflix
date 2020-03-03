@@ -1,1 +1,3 @@
-module.exports = 'Not found';
+module.exports = function NotFound() {
+  return 'Not found';
+}
