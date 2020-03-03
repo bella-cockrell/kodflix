@@ -8,13 +8,9 @@ const port = 3001;
 app.get('/', (req, res) => res.send('Hello World! Today is a fine day.'));
 //req = request, res = response
 
-app.get('/rest/pages', (req, res) => { //NOTE REST
-  res.send(getPages());
-});
-
-app.get('/rest/pages/notfound', (req, res) => {
+app.get('/rest/pages/:name', (req, res) => { //NOTE REST
   let pages = getPages();
-  let page = pages.find(page => page.name === 'notfound');
+  let page = pages.find(page => page.name === req.params.name);
   res.send(page);
 });
 
