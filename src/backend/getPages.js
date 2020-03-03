@@ -1,10 +1,17 @@
-module.exports = function getPages() {
+module.exports = function getPages(name) {
   let pages = [
     { name: 'notfound', display: 'Sorry, page not found'},
     { name: 'filmtitle', display: 'This is the film...'}
   ]
-  return pages;
+
+  if(name === undefined) {
+    return pages;
+  } else {
+    let page = pages.find(page => page.name === name);
+    return page;
+  }
 };
+//PLEASE NOTE : you should only use res.send on the routing level.
 
 /*In order to export more than one function or data type, you can export all as
 objects e.g.
