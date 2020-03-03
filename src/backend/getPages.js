@@ -4,11 +4,13 @@ module.exports = function getPages(name) {
     { name: 'filmtitle', display: 'This is the film...'}
   ]
 
-  if(name === undefined) {
-    return pages;
-  } else {
+  if(name) { //name = truthy = string, so must make
     let page = pages.find(page => page.name === name);
-    return page;
+    return page ?
+        page :
+        `Sorry, the page ${name} cannot be found`
+  } else {
+    return pages;
   }
 };
 //PLEASE NOTE : you should only use res.send on the routing level.
