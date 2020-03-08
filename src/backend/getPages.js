@@ -4,7 +4,7 @@ module.exports = function getPages(name) {
     { name: 'filmtitle', display: 'This is the film...'}
   ]
 
-  if(name) { //name = truthy = string, so must make
+  if(name) { //name = truthy = string, so must check filtered name not pages first
     let page = pages.find(page => page.name === name);
     return page ?
         page :
