@@ -15,7 +15,7 @@
     "react-scripts": "3.3.0",
     "react-three-fiber": "^4.0.14",
     "serve": "^11.3.0",
-    "three": "^0.113.2"
+    "three": "^0.125.0"
   },
   "scripts": {
     "start-frontend": "react-scripts start",
